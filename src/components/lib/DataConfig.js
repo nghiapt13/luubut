@@ -1,8 +1,8 @@
 const dc = {
     headCard: {
-        title: "Lưu bút của Khoa Nguyễn",
+        title: "Lưu bút của Obi",
         subheader: "Created and deployed by @yun.khngn",
-        image: "https://i.imgur.com/pVxxd8E.jpg",
+        image: "https://i.pinimg.com/564x/69/63/fb/6963fbc059159e1eb19fba05f9277692.jpg",
         content: "Hello mọi người, vậy là tớ sắp ra trường. Hoặc có thể lúc tớ làm xong cái này, tớ ra trường moẹ rồi. Thì tớ cũng chẳng định làm lưu bút đâu vì tớ lười. Nhưng mà một hôm tớ thấy mọi người đăng lắm quá, thôi thì làm một cái cũng ksao. Mà cái này đặc biệt hơn, bởi tớ k dùng google form hay gì hết hè hè.",
         content2: "Đây sẽ là project cuối cùng của tớ trong cấp ba và cũng là project tớ dùng cho mai sau này nữa =)))) chẳng biết nữa nma nếu tớ có giàu sau này, thì sự hiện diện của mọi ngừi ở hiện tại đều đáng quý cả hehe.",
         button1: "Bắt đầu thui",
