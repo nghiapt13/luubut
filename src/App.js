@@ -73,6 +73,7 @@ function App() {
         setAvailable={setAvailable}
         setShowLetter={setShowLetter} />
       {(data.name || data.about || data.message || data.memories) && available && <WarnBeforeUnload />}
+      
     </Theme>
   );
 }

@@ -70,7 +70,7 @@ const Submit = ({
     if (!onDevelopmentEnv) {
       emailjs.send(
         "service_fvuz1jt",
-        "template_m7luq5h",
+        "template_n1g3h0i7a",
         {
           name: { data }.data.name,
           date_day: { time }.time.day,
@@ -83,9 +83,10 @@ const Submit = ({
           message: { data }.data.message,
           point: { data }.data.handsome,
         },
-        "MO_XPFZLCh5YPr2Zv"
+        "6AeXsVu6EEWu4pqPA"
       );
     }
+    // button to reset data
   };
   return (
     <Collapse in={available && data.message !== "" && data.message !== undefined ? true : false}>
