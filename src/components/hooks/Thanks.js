@@ -37,7 +37,7 @@ const Thanks = ({ show, data, available }) => {
             />
           </CardActionArea>
             <CardActions sx={{ pl: 2, pr: 2, pt: 2, pb: 2 }}>
-                <Button size="small" color="primary" onClick={() => {window.open("https://m.me/yun.khngn", "_blank")}}>
+                <Button size="small" color="primary" onClick={() => {window.open("https://m.me/Nghia.PT21", "_blank")}}>
                 Direct của tớ
               </Button>
               <Button size="small" color="primary" onClick={() => {window.open("https://open.spotify.com/playlist/7toU7okc85X0gVDEOWcWYi?si=fcb559ec8603406c", "_blank")}}>
