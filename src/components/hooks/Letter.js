@@ -58,7 +58,7 @@ const Letter = ({ show, data, showLetter }) => {
             <CardMedia
               component="img"
               height="400"
-              image="https://wallpapers.com/images/featured/vmdj9lfm2un8rji3.jpg"
+              image="https://i.pinimg.com/564x/b6/2f/dc/b62fdcbe3a203e5d8950fffbd98be94f.jpg"
               alt="Klee"
             />
           </CardActionArea>
