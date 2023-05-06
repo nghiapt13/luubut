@@ -83,7 +83,6 @@ const Submit = ({
           message: { data }.data.message,
           point: { data }.data.handsome,
         },
-        "6mpYFhaV6lVgQsngg"
       );
     }
   };
