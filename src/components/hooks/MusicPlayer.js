@@ -47,28 +47,28 @@ const MusicPlayer = () => {
       <CardMedia
           component="img"
           sx={{ width: {md:"250px",xs:"100%"}, borderRadius: 1 , aspectRatio:"1/1"}}
-          image="https://i.pinimg.com/564x/df/68/79/df6879024b8f67c945cf2452db4c5e54.jpg"
+          image="https://e-cdns-images.dzcdn.net/images/cover/a9417aacc8b44100cbe1482fb91d6b07/500x500-000000-80-0-0.jpg"
           alt="Ngọt"
         />
         </CardActionArea>
         <Box sx={{ml:{md:'1em'}, mt:{xs:'1em'}, display: "flex", flexDirection: "column" , justifyContent:"center", alignItems:"center", width:'100%'}}>
           <CardContent sx={{width:'95%', justifyContent:"center", alignItems:"center"}}>
             <Typography component="div" variant="h5">
-              Cá hồi (Hoang)
+              đưa em về nhàa
             </Typography>
             <Typography
               variant="subtitle1"
               color="text.secondary"
               component="div"
             >
-              Ngọt band
+              GREY D x Chillies
             </Typography>
             <Typography
               variant="subtitle1"
               sx={{mt:'1em'}}
               component="div"
             >
-              Một bài nhạc khá là hay mà tớ hay nghe. Thực ra là tớ lười làm cái này nên nó sơ vcl. 🗿
+              Một bài nhạc khá là hay mà tớ hay nghe.
             </Typography>
           </CardContent>
           <Box sx={{ display: "flex", alignItems: "center", pl: {md:1, xs:0}, pb: 1}}>

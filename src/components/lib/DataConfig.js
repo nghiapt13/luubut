@@ -10,7 +10,7 @@ const dc = {
     },
     nameInput: {
         title: "Tên của cậu là gì nè?",
-        subtitle: "Hên xui gặp nhau cho kẹo (con) kiki 🍭.",
+        subtitle: "Hên xui gặp nhau cho kẹo kiki 🍭.",
         nameError: "*Điền tên cậu vào iii",
         placeholder: "Tên cậu nè...",
     },

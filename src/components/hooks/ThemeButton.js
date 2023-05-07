@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fab } from '@mui/material'
-import SettingsIcon from '@mui/icons-material/Settings';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const ThemeButton = ({setMode, modeTheme}) => {
   return (
@@ -14,7 +14,7 @@ const ThemeButton = ({setMode, modeTheme}) => {
     }}
     onClick={() => {setMode(!modeTheme)}}
     >
-        <SettingsIcon/>
+        <DarkModeIcon/>
     </Fab>
   )
 }
