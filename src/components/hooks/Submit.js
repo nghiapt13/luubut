@@ -63,8 +63,8 @@ const Submit = ({
     };
 
     //set data mới vào data và local storage
-    setData({ ...data, date: time });
-    localStorage.setItem("data", JSON.stringify({ ...data, date: time }));
+    // setData({ ...data, date: time });
+    // localStorage.setItem("data", JSON.stringify({ ...data, date: time }));
 
     //email về email
     if (!onDevelopmentEnv) {
