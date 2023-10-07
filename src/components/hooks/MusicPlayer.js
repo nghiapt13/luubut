@@ -1,11 +1,11 @@
-import {React, useEffect, useState} from "react";
+import { React, useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Nhac from "./nhac.mp3";
-import {Button, CardActionArea } from '@mui/material'
+import { Button, CardActionArea } from '@mui/material'
 
 const useAudio = url => {
   const [audio] = useState(new Audio(url));
@@ -21,7 +21,7 @@ const useAudio = url => {
   useEffect(() => {
     audio.volume = 0.7;
     playing ? audio.play() : audio.pause();
-    },
+  },
     [playing, audio]
   );
 
@@ -40,19 +40,19 @@ const MusicPlayer = () => {
   const [playing, toggle, replay] = useAudio(Nhac);
   return (
     <div className="music-container">
-      <Card variant="outlined" sx={{ display: {md:"flex", sm:"block"}, p:2, justifyContent:"left" }}>
-      <CardActionArea
-      sx={{ width: {md:"250px",xs:"100%"}, borderRadius: 1 , aspectRatio:"1/1"}}
-      >
-      <CardMedia
-          component="img"
-          sx={{ width: {md:"250px",xs:"100%"}, borderRadius: 1 , aspectRatio:"1/1"}}
-          image="https://e-cdns-images.dzcdn.net/images/cover/a9417aacc8b44100cbe1482fb91d6b07/500x500-000000-80-0-0.jpg"
-          alt="Ngọt"
-        />
+      <Card variant="outlined" sx={{ display: { md: "flex", sm: "block" }, p: 2, justifyContent: "left" }}>
+        <CardActionArea
+          sx={{ width: { md: "250px", xs: "100%" }, borderRadius: 1, aspectRatio: "1/1" }}
+        >
+          <CardMedia
+            component="img"
+            sx={{ width: { md: "250px", xs: "100%" }, borderRadius: 1, aspectRatio: "1/1" }}
+            image="https://e-cdns-images.dzcdn.net/images/cover/a9417aacc8b44100cbe1482fb91d6b07/500x500-000000-80-0-0.jpg"
+            alt="Ngọt"
+          />
         </CardActionArea>
-        <Box sx={{ml:{md:'1em'}, mt:{xs:'1em'}, display: "flex", flexDirection: "column" , justifyContent:"center", alignItems:"center", width:'100%'}}>
-          <CardContent sx={{width:'95%', justifyContent:"center", alignItems:"center"}}>
+        <Box sx={{ ml: { md: '1em' }, mt: { xs: '1em' }, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: '100%' }}>
+          <CardContent sx={{ width: '95%', justifyContent: "center", alignItems: "center" }}>
             <Typography component="div" variant="h5">
               đưa em về nhàa
             </Typography>
@@ -65,22 +65,22 @@ const MusicPlayer = () => {
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{mt:'1em'}}
+              sx={{ mt: '1em' }}
               component="div"
             >
               Một bài nhạc khá là hay mà tớ hay nghe.
             </Typography>
           </CardContent>
-          <Box sx={{ display: "flex", alignItems: "center", pl: {md:1, xs:0}, pb: 1}}>
+          <Box sx={{ display: "flex", alignItems: "center", pl: { md: 1, xs: 0 }, pb: 1 }}>
             <Button onClick={toggle}>
               {playing ? "Pause" : "Play"}
             </Button>
-            <Button sx={{ml:'1em'}} onClick={replay}>
+            <Button sx={{ ml: '1em' }} onClick={replay}>
               Replay
             </Button>
-            <Button sx={{ml:'1em'}} variant="outlined" color="success" onClick={() => {window.open("https://open.spotify.com/playlist/7toU7okc85X0gVDEOWcWYi?si=fcb559ec8603406c", "_blank")}}>
+            {/* <Button sx={{ml:'1em'}} variant="outlined" color="success" onClick={() => {window.open("https://open.spotify.com/playlist/7toU7okc85X0gVDEOWcWYi?si=fcb559ec8603406c", "_blank")}}>
               Playlist
-            </Button>
+            </Button> */}
           </Box>
         </Box>
       </Card>

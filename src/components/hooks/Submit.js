@@ -38,16 +38,7 @@ const Submit = ({
       alert("Bạn chưa điền đủ thông tin hoặc chưa xác nhận captcha");
     }
   };
-  const handleReset = () => {
-    setData({
-      name: "",
-      about: "",
-      memories: "",
-      message: "",
-      handsome: 0,
-    });
-    setAuthen(false);
-  };
+
   const [authen, setAuthen] = useState(onDevelopmentEnv ? true : false);
 
   const submitForm = (event) => {
@@ -97,9 +88,7 @@ const Submit = ({
       );
     }
     // button to reset data
-    <Button variant="text" onClick={handleReset}>
-      Reset Form
-    </Button>;
+
   };
   return (
     <Collapse in={available && data.message !== "" && data.message !== undefined ? true : false}>
